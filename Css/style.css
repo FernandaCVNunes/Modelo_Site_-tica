@@ -1,0 +1,273 @@
+@font-face{
+    font-family:"Raleway";
+    src: url(fonts/Raleway-Light.ttf);
+}
+.clearfix{
+    clear:both;
+}
+body{
+    margin: 0px;
+    font-family: "Raleway","Arial", sans-serif;
+}
+textarea, input{
+    font-family: "Raleway","Arial", sans-serif;
+}
+.barra_superior{
+    /*Cria uma linha na parte de baixo do texto*/
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: rgb(102, 102, 102); 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+/*Configuração responsivo: Tablets e Computadores*/
+@media screen and (min-width:480px) and (max-width:1366px){
+    
+}
+/*Configuração responsivo: Smartphone*/
+@media screen and (max-width:480px){
+    .barra_superior .container{
+        margin-left: 10px;
+    }
+    .logo{
+        width: 100%;
+    }
+    nav{
+        float: none;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    nav .btn_Destaque{
+    margin-left: 0px;
+    }
+    .sec01 p, .sec01 .btn_Destaque {
+        margin-left: 10px;
+    }
+    .sec03{
+        height: 400px;
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+    .sec03 p{
+        margin-left: 30px; 
+        text-align: center;
+    }
+    .largura40{
+        width: 100%;
+        height: 400px;
+        margin-left: 30px;
+    }
+    .sec03 .img2{
+        background-image: none;
+        width: 0px;
+    }
+    .um_terco{
+        width: 100%;
+        border-bottom: 1px solid rgb(204, 204, 204);
+        padding-left: 90px;
+        font-size: 20px;
+    }
+    .margem_esquerda{
+        margin-left: 0px;
+    }
+    .um_terco .logo{
+        width: 50%;
+    }
+    .container_logo{
+        text-align: center;
+    }
+}
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+nav{
+    color: rgb(102, 102, 102); 
+    font-size: 14px;
+    float: right;
+    margin-top: 50px;
+}
+nav a {
+    /*Altera o estilo dos link(a) na nav*/
+    color: rgb(102, 102, 102);
+    /*Retira o tracejado de debaixo do link*/
+    text-decoration: none;
+}
+.btn_Destaque, .metade input[type=submit]{
+    background-color: rgb(255,77,77);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+    margin-left: 25px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.sec01{
+    height: 610px;
+    color:rgb(255,77,77);
+    width: 100%;
+    background-image: url(../Img/estante%20de%20oculos%20960.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 130px;
+    background-color:rgb(249,251,250); 
+}
+.sec01 .titulo{
+    font-size: 48px;
+    padding-top: 80px;
+}
+.sec01 p{
+    font-size: 22px;
+    padding-bottom: 30px;
+    line-height: 120%;
+}
+.sec02{
+    border-bottom: 5px solid rgb(204, 204, 204);
+}
+.sec02 p{
+    font-size: 28px;
+    text-align: center;
+    color: rgb(102, 102, 102);
+}
+.sec02 img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.sec03{
+    background-color: rgb(249, 249, 249); 
+    height: 493px;
+}
+.sec03 p{
+    font-size: 54px;
+    line-height: 120%;
+    color: rgb(102, 102, 102);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.largura40{
+    width: 35%;
+    float:left;
+    height: 493px;
+}
+.largura60{
+    width: 65%;
+    float:left;
+}
+.img2{
+    background-image: url(../Img/otica%20493.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 493px;
+}
+.direitos_reservados{
+    background-color: rgb(255,77,77);
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.direitos_reservados a{
+    color: white;
+}
+.um_terco{
+    float: left;
+    width: 33%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.um_terco .logo{
+    width: 90%;
+}
+.um_terco img{
+    width: 40px;
+}
+.um_terco, a{
+    color: rgb(136,136,136);
+}
+.margem_esquerda{
+    margin-left: 30px;
+}
+.metade{
+    width: 50%;
+    float:left;
+    line-height: 150%;
+    color: rgb(120,120,120);
+}
+.metade form{
+    line-height: 250%;
+}
+.metade form input[type=text], textarea, .modal input[type=text] {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 63%;
+    background-color: #FAFAFA;
+    padding: 10px;
+}
+.metade textarea{
+    min-height: 100px;
+}
+.metade input[type=submit]{
+    float: right
+} 
+.metade img{
+    width: 35px;
+}
+.metade div{
+    margin-left: 20px;
+}
+.sec_fale, .sec_onde{
+    height: 500px;
+    background-color: #FAFAFA;
+}
+.sec_fale .metade{
+    padding-top: 100px;
+}
+.metade label{
+    width: 30%;
+    
+    display: inline-block;
+    vertical-align: top;
+}
+.modal{
+    display: none;
+    position: fixed;
+    width: 400px;
+    min-height: 200px;
+    background-color: white;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -200px;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 4px;
+}
+.modal input[type=text]{
+    width: 95%;
+}
+.modal a{
+    float: right;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer; /*faz com que o curso ficar em mão*/
+}
+span.nao_valido {
+    color: red;
+    display: none;
+}
+input.nao_valido, textarea.nao_valido{
+    border-bottom: 1px solid red !important;
+}
+.texto{
+    color: gray;
+    float: right;
+    font-size: 12px;
+    line-height: 12px;
+}
